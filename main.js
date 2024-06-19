@@ -46,3 +46,18 @@ for (var i = 0; i < reveals.length; i++) {
 }
   
 window.addEventListener("scroll", reveal);
+
+function sendEmail() {
+  const email = "weissovajulie@gmail.com";
+  const subject = "RSVP - Svatba Vilímci";
+  const body = `Ahoj,
+
+tímto bych rád potvrdil/a svojí účast.
+
+Svatby se zúčastním sám. / Společně se mnou se zúčastní XXX lidí.
+
+S pozdravem,
+
+VAŠE JMÉNO`;
+  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
