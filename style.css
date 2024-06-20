@@ -506,3 +506,9 @@ footer h2{
     font-size: 2Srem;
     font-weight: normal;
 }
+
+@media only screen and (max-width: 600px) {
+    #hack {
+        display: none;
+    }
+}
