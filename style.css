@@ -239,7 +239,7 @@ a:hover{
 }
 @media (max-width:1000px){
     .timeline{
-        background-color: var(--grey-color);
+        background-color: var(--grey-color-light);
         float: none;
         position: relative;
         top: 0;
@@ -399,6 +399,27 @@ a:hover{
     }
 }
 
+/* <===================MAP===================> */
+
+.map{
+    height: 80vh;
+    width: 100%;
+    background-image: url(public/mapa.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Media query for devices with a max width of 600px */
+@media only screen and (max-width: 600px) {
+    .map {
+        background-attachment: scroll;
+        background-position: top;
+        height: 40vh; /* Adjust the height if needed for better display on smaller screens */
+    }
+}
+
 /* <===================STAY===================> */
 #stay{
     background-color: var(--grey-color);
@@ -508,7 +529,13 @@ footer h2{
 }
 
 @media only screen and (max-width: 600px) {
-    #hack {
+    .mobile-hack {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .desktop-hack {
         display: none;
     }
 }
